@@ -8,4 +8,4 @@ ADD . /resume-src/
 #
 ENV TEXINPUTS=$TEXINPUTS:/resume-src/
 
-RUN pdflatex -interaction=nonstopmode /resume-src/main.tex
+#RUN pdflatex -interaction=nonstopmode /resume-src/main.tex
