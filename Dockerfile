@@ -5,7 +5,5 @@ RUN apt-get update
 RUN apt-get -y install texlive-latex-extra
 
 ADD . /resume-src/
-#
-ENV TEXINPUTS=$TEXINPUTS:/resume-src/
 
-#RUN pdflatex -interaction=nonstopmode /resume-src/main.tex
+ENV TEXINPUTS=$TEXINPUTS:/resume-src/
