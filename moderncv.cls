@@ -191,7 +191,8 @@
 % compatibility package with older versions of moderncv
 \RequirePackageWithOptions{moderncvcompatibility}
 
-\RequirePackage{l3regex}
+%\RequirePackage{l3regex}
+\RequirePackage{expl3}
 
 %-------------------------------------------------------------------------------
 %                class definition
@@ -348,11 +349,6 @@
 % usage: \moderncvfoot[<optional foot option>]{<foot variant number>}
 \newcommand*{\moderncvfoot}[2][]{%
   \@loadmoderncvpackage[#1]{foot}{#2}}
-  
-% loads a color scheme
-% usage: \moderncvcolor{<color scheme name>}
-\newcommand*{\moderncvcolor}[1]{%
-  \RequirePackage{moderncvcolor#1}}
 
 % loads an icons set
 % usage: \moderncvicons{<icon set name>}
@@ -513,7 +509,7 @@
   \ifthenelse{\equal{#1}{}}%
     {\href{mailto:#2}{#2}}%
     {\href{mailto:#2}{#1}}}
-    
+
 % makes a tel hyperlink
 % usage: \tellink[optional text]{link}
 \newcommand*{\tellink}[2][]{%
