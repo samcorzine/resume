@@ -278,9 +278,13 @@
 
 % colors
 %-------
-\definecolor{color0}{rgb}{0,0,0}% main default color, normally left to black
-\definecolor{color1}{rgb}{0,0,0}% primary scheme color
-\definecolor{color2}{rgb}{0,0,0}% secondary scheme color
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{rgb}{0.22,0.45,0.70}% light blue
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+%
+%\definecolor{color0}{rgb}{0,0,0}% main default color, normally left to black
+%\definecolor{color1}{rgb}{0,0,0}% primary scheme color
+%\definecolor{color2}{rgb}{0,0,0}% secondary scheme color
 \definecolor{color3}{rgb}{0,0,0}% tertiary scheme color
 
 % symbols
