@@ -16,7 +16,7 @@
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
-
+\usepackage{hyperref}
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
@@ -55,45 +55,61 @@
 
 \section{Experience}
 % \subsection{Vocational}
-\cventry{2019-Ongoing}{Data Engineer II}{SpotHero}{Chicago, IL}{}{Analytics for America's leading parking app
+\cventry{June 2019 - Ongoing}{Data Engineer II}{SpotHero}{Chicago, IL}{}{Analytics for America's leading parking app
 \begin{itemize}%
-\item Working with Data Scientists to train and run models in production;
+\item Working with Data Scientists to train and run statistical models in production;
 \item Managing ML Stack (Pandas/Sklearn/Jupyter on Sagemaker);
-\item Running Presto/Airflow/Kafka Streams on Kubernetes;
-\item Writing Python ETL jobs and maintaining shared tools;
+\item Writing Python ETL (Extract Transform Load) jobs and maintaining shared tools;
 \end{itemize}}
-\cventry{2018-2019}{Software Engineer}{Slalom Consulting}{Chicago, IL}{}{Enterprise Cloud-Native applications development
+\cventry{June 2018 - June 2019}{Software Engineer}{Slalom Consulting}{Chicago, IL}{}{Enterprise Cloud-Native applications development
 \begin{itemize}%
-\item Architected and implemented a multi-account cloud strategy on AWS;
-\item Built/deployed/managed Python serverless applications;
-\item Lead teams in the process of Dockerizing apps and deploying them;
+\item Architected/Managed big data infrastructure;
+\item Built/deployed/managed Python applications;
+\item Lead teams in the process of containerizing apps and deploying them;
 \end{itemize}}
-\cventry{2017-2018}{DevOps Engineer}{CCC Information Services}{Chicago, IL}{}{Data center -> Cloud
+\cventry{May 2017 - June 2018}{DevOps Engineer}{CCC Information Services}{Chicago, IL}{}{Data center -> Cloud
 \begin{itemize}%
-\item Built a full-stack "DevOps Console" using React and Python
-\item Moved DevOps platform components into a Kubernetes cluster to reduce hosting costs;
-\item Implemented a Prometheus/Grafana stack for application monitoring;
-\end{itemize}}
-\cventry{2017}{Co-Founder}{Room Six LLC}{Chicago, IL}{}{Two-person, one-client consultancy building analytics solutions
-\begin{itemize}%
-\item Built a data processing application and integrated with a legacy CRM system;
-\item Developed a custom UI to allow interactive analysis of sales and inventory data;
+\item Built a web application for managing and backing up servers;
+\item Moved platform components into a dynamic scheduler to reduce hosting costs;
 \end{itemize}}
 % \subsection{Miscellaneous}
 % \cventry{year--year}{Job title}{Employer}{City}{}{Description}
 
 \section{Education}
-\cventry{2014--2017}{B.A. Mathematics}{DePaul University}{Chicago, IL}{}{ Highlights:% \newline{}  % arguments 3 to 6 can be left empty
+\cventry{2014--2018}{B.A. Mathematics}{DePaul University}{Chicago, IL}{}{ Highlights:% \newline{}  % arguments 3 to 6 can be left empty
 \begin{itemize}%
 \item Classes I loved: Partial Differential Equations/Measure Theory/Representation Theory;
 \item Extensive optimization of Python computations in research project;
 \end{itemize}}
 
+\section{Talks Given}
+\cventry{Fall 2016}{Computational Results w.r.t Factorization of Alegebraic Integers on $Q(\sqrt{2})$}{DePaul Undergraduate Research Showcase}{Chicago, IL}{}{ Description:% \newline{}  % arguments 3 to 6 can be left empty
+\begin{itemize}%
+    \item Explained high-level results to a scientific audience of varying backgrounds;
+    \item Made a posterboard presentation with graphs of results;
+\end{itemize}}
+\cventry{Spring 2016}{Chameleons of Three Colors: Connections to Modular Arithmetic, Dynamics, and QuasiGroups}{DePaul Math Club}{Chicago, IL}{}{ Description:% \newline{}  % arguments 3 to 6 can be left empty
+\begin{itemize}%
+    \item Overview of Problem: \url{https://www.cut-the-knot.org/blue/Chameleons.shtml};
+    \item Discussed ways to view this problem, including the standard approach of modular arithmetic, but also as an evolving dynamical system using Monte Carlo methods and Quasigroups;
+    \item Proposed a class of related problems, where Lizard combination rules could be chosen from a list of Quasigroups with appropriate qualities;
+\end{itemize}}
+\cventry{Summer 2018}{An Introduction to Generative Art}{Slalom Tech Talks}{Chicago, IL}{}{ Description:% \newline{}  % arguments 3 to 6 can be left empty
+\begin{itemize}%
+    \item Presented an overview of common algorithms used for Generative Art;
+    \item Gave a live demo of selected algorithms, with audience members choosing parameters and giving feedback on renders;
+\end{itemize}}
+\cventry{Fall 2020}{Real-Time Style Transfer with Neural Networks}{SpotHero Tech Demo}{Chicago, IL}{}{ Description:% \newline{}  % arguments 3 to 6 can be left empty
+\begin{itemize}%
+    \item Rearchitected a Tensorflow application to accept video instead of images, and connected it to my webcam to do video style transfer;
+    \item Walked a group of software engineers through the basics of neural networks and optimization;
+\end{itemize}}
+
 \section{Programming Languages}
-\cvitemwithcomment{Python}{Writing type-hinted ETL jobs, working with Airflow/Pandas/Sklearn}{}
-\cvitemwithcomment{Golang}{APIs and Cloud automation (I'm the guy reading Terraform source code)}{}
-\cvitemwithcomment{Java/Kotlin}{KStreams pipelines, Flink proof of concept }{}
-\cvitemwithcomment{JavaScript}{Custom UI's using JQuery and React}{}
+\cvitemwithcomment{Python}{Numpy/Scipy/Pandas/Sklearn/Tensorflow}{}
+\cvitemwithcomment{Java/Kotlin}{Streaming data pipelines}{}
+\cvitemwithcomment{Julia}{Generative Art, Differential Programming}{}
+\cvitemwithcomment{JavaScript}{Custom UI's for Data Visualization}{}
 
 \end{document}
 %
