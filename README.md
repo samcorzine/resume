@@ -3,7 +3,7 @@
 
 #### What is this?
 
-This is the LaTex source code for my resume. I try to keep it up to date-ish.
+This is the LaTex source for my resume. I try to keep it up to date-ish.
 
 ### How do I view this resume?
 
